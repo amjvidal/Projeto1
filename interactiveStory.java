@@ -49,7 +49,7 @@ public static void printString(String a) {
                 "seus caminhos possam se cruzar novamente no futuro.");
                 contador++;
             }
-            if else(resposta1.equalsIgnoreCase(aceita)){
+            else if(resposta1.equalsIgnoreCase(aceita)){
                 printString("Sofia e Adam passam o número um do outro para que possam conversar por mensagens mais tarde naquele mesmo dia.");
                 printString("Adam:\n Sofia, estou feliz que você tenha concordado em ter esse encontro comigo. Eu estava ansioso para passar mais tempo com você. Que tal irmos ao Mariner's Bistro & Lounge? A comida é incrível, e tenho certeza de que você irá adorar o ambiente.");
                 printString("Sofia: sorri suavemente\n Isso parece maravilhoso. Adoro a ideia de um jantar à beira-mar. Parece o cenário perfeito para nos conhecermos melhor");
@@ -58,11 +58,11 @@ public static void printString(String a) {
                 printString("Sofia:\n Adam, estou realmente gostando de passar esse tempo com você. Sinto que temos uma conexão especial. Mas também tenho medo de me machucar novamente. O que você procura em um relacionamento? O que você espera de nós?");
                 printString("Agora é a sua vez de escolher a resposta de Adam. Digite 2 para uma resposta positiva e encorajadora, ou 2 para uma resposta mais cautelosa e incerta. A escolha que você fizer determinará a direção do relacionamento entre os dois.");
                 String resposta2 = scanner.nextLine();
-                
+
             
             }
             else{
-                printString("Resposta Incorreta, Por favor responda novamente.")
+                printString("Resposta Incorreta, Por favor responda novamente.");
             }
         }
 
