@@ -57,8 +57,12 @@ public static void printString(String a) {
                 printString("No dia seguinte, Sofia e Adam se encontram em um aconchegante restaurante à beira-mar. O clima é descontraído e a conversa flui naturalmente. Durante o jantar, eles compartilham histórias engraçadas e risadas contagiantes. A química entre eles é palpável, e ambos estão se divertindo. Enquanto saboreiam a sobremesa, uma pausa ocorre na conversa, e é nesse momento que Sofia decide abrir o coração:");
                 printString("Sofia:\n Adam, estou realmente gostando de passar esse tempo com você. Sinto que temos uma conexão especial. Mas também tenho medo de me machucar novamente. O que você procura em um relacionamento? O que você espera de nós?");
                 printString("Agora é a sua vez de escolher a resposta de Adam. Digite 2 para uma resposta positiva e encorajadora, ou 2 para uma resposta mais cautelosa e incerta. A escolha que você fizer determinará a direção do relacionamento entre os dois.");
-                String resposta2 = scanner.nextLine();
-
+                int resposta2 = scanner.nextInt();
+                if (resposta2 == 1){
+                    printString("Adam: Sofia, desde o momento em que nos conhecemos, senti algo especial entre nos. Eu tambem estou gostando de passar esse tempo com voce. No entanto, entendo seus medos e quero que saiba que estou disposto a construir algo significativo. Estou buscando um relacionamento honesto e comprometido, e acho que temos potencial para isso. Vamos levar as coisas devagar, respeitando o tempo um do outro e permitindo que nosso amor cresça naturalmente.");
+                    printString("Sofia se sente encorajada e emocionada com a resposta positiva de Adam. Ela vê nele um parceiro em potencial, alguem disposto a investir tempo e esforço para construir um relacionamento significativo. Ambos concordam em levar as coisas devagar, respeitando o tempo um do outro. Conforme o tempo passa, eles continuam a se conhecer, explorando suas afinidades, compartilhando momentos de alegria e superando desafios juntos. O relacionamento deles se desenvolve em uma conexão profunda e amorosa, repleta de compreensão, apoio mútuo e crescimento pessoal. Sofia e Adam constroem uma vida juntos, enfrentando as adversidades de mãos dadas e encontrando alegria nas pequenas coisas. Eles criam memórias duradouras e vivem uma história de amor cheia de felicidade e realizações");
+                    contador++;
+                }
             
             }
             else{
