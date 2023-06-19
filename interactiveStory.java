@@ -10,8 +10,8 @@ public static void printString(String a) {
     public static void main(String[] args) {
         //INTRODUÇÂO
         Scanner scanner = new Scanner(System.in);
-        printString("Shades of Charm, Maybe a happy story. ");
-        printString("Era uma vez uma mulher misteriosa chamada Sophia.\n "+
+        printString("Shades of Charm, Maybe a happy story. \n");
+        printString("Era uma vez uma mulher misteriosa chamada Sofia.\n "+
         "Ela vivia em uma cidade ensolarada beira-mar, onde as ondas "+
         "quebravam suavemente na areia.\n Sofia era conhecida por sua voz "+
         "encantadora e melancolica, e todas as noites ela se apresentava em "+
@@ -22,19 +22,21 @@ public static void printString(String a) {
         " na beleza de sua voz.");
         printString("Durante uma pausa na apresentação de Sofia, Adam se "+
         "aproxima dela no bar do pub à beira-mar.\n Ele olha para ela com "+
-        "admiração e um toque de nervosismo,\n antes de finalmente reunir coragem para falar:");
+        "admiração e um toque de nervosismo,\n antes de finalmente reunir coragem para falar:\n");
         printString("Adam:\n Ei, Sofia! Desculpe interromper seu momento, "+
-        "mas sua música tocou profundamente em mim.\n Sua voz é simplesmente incrível.");
+        "mas sua música tocou profundamente em mim.\n Sua voz é simplesmente incrível.\n");
         printString("Sofia sorri, agradecida pelo elogio, mas também cautelosa.");
         printString("Sofia:\n Obrigada, Adam. Fico feliz em saber que você "+
-        "aprecia minha música.");
+        "aprecia minha música.\n");
         printString("Adam:\n Você sabe, eu adoraria poder conversar com "+
         "você mais depois da sua apresentação. Eu gostaria de conhecê-la melhor.");
-        printString("Sofia olha para ele, sua expressão revelando uma mistura de emoções.");
+        printString("Sofia olha para ele, sua expressão revelando uma mistura de emoções.\n");
         // 1° ESCOLHA
         int contador = 0;
         while(contador == 0){
-            printString("Digite SIM para terem o encontro e NÃO para eles não terem o Encontro.");
+            printString("Qual a sua escolha? Sofia deve ter ou não o encontro com Adam?\n");
+            printString(" - Digite Sim para terem o encontro.\n");
+            printString(" - Digite Nao para terem o encontro.");
             String resposta1 = scanner.nextLine();
             String recusa = "nao";
             String aceita = "sim";
@@ -43,7 +45,7 @@ public static void printString(String a) {
                 printString("Sofia, sentindo-se insegura e não pronta para"+
                 " se envolver emocionalmente,\n educadamente recusa o pedido de"+
                 " Adam. Embora Adam fique desapontado, \nele respeita a decisão"+
-                " de Sofia e a admira ainda mais por sua honestidade.\n "+
+                " de Sofia e a admira ainda mais por sua honestidade.\n"+
                 "Enquanto Sofia continua a cantar no palco, os tons de frieza"+
                 " que ecoam diante da música cantada por ela envolvem Adam,"+
                 " que embora triste,\ndeixa o pub com a esperança de que "+
@@ -51,33 +53,33 @@ public static void printString(String a) {
                 contador++;
             }
             else if(resposta1.equalsIgnoreCase(aceita)){
-                printString("Sofia e Adam passam o número um do outro para"+
-                " que possam conversar por mensagens mais tarde naquele mesmo dia.");
+                printString("\n \n Sofia e Adam passam o número um do outro para"+
+                " que possam conversar por mensagens mais tarde naquele mesmo dia.\n");
                 printString("Adam:\n Sofia, estou feliz que você tenha concordado"+
                 " em ter esse encontro comigo. Eu estava ansioso para passar mais "+
                 "tempo com você.\n Que tal irmos ao Mariner's Bistro & Lounge? A comida"+
-                " é incrível, e tenho certeza de que você irá adorar o ambiente.");
+                " é incrível, e tenho certeza de que você irá adorar o ambiente.\n");
                 printString("Sofia: sorri suavemente\n Isso parece maravilhoso. "+
                 "Adoro a ideia de um jantar à beira-mar. Parece o cenário perfeito"+
-                " para nos conhecermos melhor");
-                printString("Adam: empolgado\n Ótimo!");
+                " para nos conhecermos melhor\n");
+                printString("Adam: empolgado\n Ótimo!\n");
                 printString("No dia seguinte, Sofia e Adam se encontram em um "+
                 "aconchegante restaurante à beira-mar.\n O clima é descontraído "+
                 "e a conversa flui naturalmente. Durante o jantar, eles compartilham"+
                 " histórias engraçadas e risadas contagiantes.\n A química entre "+
                 "eles é palpável, e ambos estão se divertindo.\n Enquanto saboreiam a"+
                 " sobremesa, uma pausa ocorre na conversa, e é nesse momento que"+
-                " Sofia decide abrir o coração:");
+                " Sofia decide abrir o coração:\n");
                 printString("Sofia:\n Adam, estou realmente gostando de passar esse"+
                 " tempo com você.\n Sinto que temos uma conexão especial. \nMas também "+
                 "tenho medo de me machucar novamente.\n O que você procura em um "+
                 "relacionamento? O que você espera de nós?");
                     int contador2 = 0;
                     while(contador2==0){
-                    printString("Agora é a sua vez de escolher a resposta de Adam."+
-                    " \nDigite 2 para uma resposta positiva e encorajadora, ou 2 para"+
-                    " uma resposta mais cautelosa e incerta.\n A escolha que você "+
-                    "fizer determinará a direção do relacionamento entre os dois.");
+                    printString(" A escolha que você "+
+                    "fizer determinará a direção do relacionamento entre os dois.\n"+
+                    " - Digite 1 para uma resposta positiva e encorajadora\n"+" - Digite 2 para"+
+                    " uma resposta mais cautelosa e incerta.\n");
                     int resposta2 = scanner.nextInt();
                     if (resposta2 == 1){
                         //2. FINAL - O Encontro Promissor:
@@ -136,9 +138,6 @@ public static void printString(String a) {
                 printString("Resposta Incorreta, Por favor responda novamente.");
             }
         }
-
-
 scanner.close();
-
 }
 }
