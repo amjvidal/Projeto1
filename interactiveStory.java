@@ -6,12 +6,12 @@ public class interactiveStory {
 public static void printString(String a) {
         System.out.println(a);
 }
-
+// olá Lucas
     public static void main(String[] args) {
         //INTRODUÇÂO
         Scanner scanner = new Scanner(System.in);
-        printString("Shades of charm, Maybe a happy story. ");
-        printString("Era uma vez uma mulher misteriosa chamada Sofia.\n "+
+        printString("Shades of Charm, Maybe a happy story. ");
+        printString("Era uma vez uma mulher misteriosa chamada Sophia.\n "+
         "Ela vivia em uma cidade ensolarada beira-mar, onde as ondas "+
         "quebravam suavemente na areia.\n Sofia era conhecida por sua voz "+
         "encantadora e melancolica, e todas as noites ela se apresentava em "+
