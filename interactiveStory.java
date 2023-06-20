@@ -6,7 +6,7 @@ public class interactiveStory {
 public static void printString(String a) {
         System.out.println(a);
 }
-//add
+
     public static void main(String[] args) {
         //INTRODUÇÂO
         Scanner scanner = new Scanner(System.in);
