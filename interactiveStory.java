@@ -8,6 +8,9 @@ public static void printString(String a) {
 }
 
     public static void main(String[] args) {
+       
+        personagem  Sofia = new personagem("Sofia", 100);
+        personagem  Adam = new personagem("Adam", 50);
         //INTRODUÇÂO
         Scanner scanner = new Scanner(System.in);
         printString("Shades of Charm, Maybe a happy story. \n");
@@ -42,6 +45,7 @@ public static void printString(String a) {
             String aceita = "sim";
             if(resposta1.equalsIgnoreCase(recusa)){
                 // 1. FINAL - A Recusa de Sofia
+                Sofia.mudapaixao(-50);
                 printString("Sofia, sentindo-se insegura e não pronta para"+
                 " se envolver emocionalmente,\n educadamente recusa o pedido de"+
                 " Adam. Embora Adam fique desapontado, \nele respeita a decisão"+
