@@ -11,6 +11,7 @@ public static void printString(String a) {
        
         personagem  Sofia = new personagem("Sofia", 100);
         personagem  Adam = new personagem("Adam", 50);
+        boolean amor = true;
         //INTRODUÇÂO
         Scanner scanner = new Scanner(System.in);
         printString("Shades of Charm, Maybe a happy story. \n");
@@ -36,27 +37,38 @@ public static void printString(String a) {
         printString("Sofia olha para ele, sua expressão revelando uma mistura de emoções.\n");
         // 1° ESCOLHA
         int contador = 0;
-        while(contador == 0){
+        while(contador == 0 && amor == true){
             printString("Qual a sua escolha? Sofia deve ter ou não o encontro com Adam?\n");
             printString(" - Digite Sim para terem o encontro.\n");
             printString(" - Digite Nao para terem o encontro.");
+            printString("");
             String resposta1 = scanner.nextLine();
             String recusa = "nao";
             String aceita = "sim";
+            
             if(resposta1.equalsIgnoreCase(recusa)){
                 // 1. FINAL - A Recusa de Sofia
-                Sofia.mudapaixao(-50);
+                
                 printString("Sofia, sentindo-se insegura e não pronta para"+
                 " se envolver emocionalmente,\n educadamente recusa o pedido de"+
                 " Adam. Embora Adam fique desapontado, \nele respeita a decisão"+
                 " de Sofia e a admira ainda mais por sua honestidade.\n"+
                 "Enquanto Sofia continua a cantar no palco, os tons de frieza"+
-                " que ecoam diante da música cantada por ela envolvem Adam,"+
+                " que ecoam diante da música\n cantada por ela envolvem Adam,"+
                 " que embora triste,\ndeixa o pub com a esperança de que "+
                 "seus caminhos possam se cruzar novamente no futuro.");
+                Sofia.mudapaixao(10);
+                printString("");
+                Adam.mudapaixao(-50);
+                printString("");
                 contador++;
             }
-            else if(resposta1.equalsIgnoreCase(aceita)){
+            else if(resposta1.equalsIgnoreCase(aceita)){ 
+                printString("");
+                Sofia.mudapaixao(0);
+                printString("");
+                Adam.mudapaixao(50);
+                printString("Adam ficou extremamente feliz por sofia ter aceitado seu convite.");
                 printString("\n \n Sofia e Adam passam o número um do outro para"+
                 " que possam conversar por mensagens mais tarde naquele mesmo dia.\n");
                 printString("Adam:\n Sofia, estou feliz que você tenha concordado"+
@@ -79,7 +91,7 @@ public static void printString(String a) {
                 "tenho medo de me machucar novamente.\n O que você procura em um "+
                 "relacionamento? O que você espera de nós?");
                     int contador2 = 0;
-                    while(contador2==0){
+                    while(contador2==0 && amor == true){
                     printString(" A escolha que você "+
                     "fizer determinará a direção do relacionamento entre os dois.\n"+
                     " - Digite 1 para uma resposta positiva e encorajadora\n"+" - Digite 2 para"+
@@ -87,6 +99,7 @@ public static void printString(String a) {
                     int resposta2 = scanner.nextInt();
                     if (resposta2 == 1){
                         //2. FINAL - O Encontro Promissor:
+                       
                         printString("Adam:\n Sofia, desde o momento em que nos "+
                         "conhecemos, senti algo especial entre nos.\n Eu tambem estou "+
                         "gostando de passar esse tempo com voce.\n No entanto, entendo "+
@@ -107,12 +120,17 @@ public static void printString(String a) {
                         "apoio mútuo e crescimento pessoal. \nSofia e Adam constroem "+
                         "uma vida juntos, enfrentando as adversidades de mãos dadas "+
                         "e encontrando alegria nas pequenas coisas. \nEles criam memórias "+
-                        "duradouras e vivem uma história de amor cheia de felicidade e realizações");
+                        "duradouras e vivem uma história de amor cheia de felicidade e realizações"); 
+                        printString("");
+                        Sofia.mudapaixao(100);
+                        printString("");
+                        Adam.mudapaixao(100);
                         contador++;
                         contador2++;
                     }
                     else if(resposta2== 2){
                         //3. FINAL - O Relacionamento Complicado:
+                        
                         printString(" Adam:\n Sofia, também estou apreciando muito "+
                         "a nossa companhia, mas confesso que estou um pouco incerto"+
                         " sobre o futuro. \nAcho que temos uma conexão especial, mas"+
@@ -130,6 +148,12 @@ public static void printString(String a) {
                         " eles podem perceber que as diferenças fundamentais são difíceis de"+
                         " superar, \nresultando em um relacionamento instável e eventualmente "+
                         "levando a uma separação dolorosa.");
+                        printString("");
+                        Sofia.mudapaixao(-50);
+                        printString("Sofia teve momentos ruins em sua vida e seus pontos de"+
+                        " paixao diminuiram.");
+                        Adam.mudapaixao(-100);
+                        printString("");
                         contador++;
                         contador2++;                    
                     }
