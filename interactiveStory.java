@@ -8,63 +8,63 @@ public static void printString(String a) {
 }
 
     public static void main(String[] args) {
-        String cap1 = "Era uma vez uma mulher misteriosa chamada Sofia.\n "+
+        String cap1 = "\nEra uma vez uma mulher misteriosa chamada Sofia.\n "+
                             "Ela vivia em uma cidade ensolarada beira-mar, onde as ondas "+
                             "quebravam suavemente na areia.\n Sofia era conhecida por sua voz "+
                             "encantadora e melancolica, e todas as noites ela se apresentava em "+
                             "um pub local,\n onde sua musica ecoava pelas paredes.\n "+
-                            "Foi em uma dessas noites que Sofia conheceu um homem "+
+                            "\nFoi em uma dessas noites que Sofia conheceu um homem "+
                             "intrigante chamado Adam.\n Enquanto Sofia cantava suas melodias "+
                             "envolventes, Adam estava lá,\n perdido em suas letras profundas e"+
                             " na beleza de sua voz."+
                             "\nDurante uma pausa na apresentação de Sofia, Adam se "+
                             "aproxima dela no bar do pub à beira-mar.\n Ele olha para ela com "+
                             "admiração e um toque de nervosismo,\n antes de finalmente reunir coragem para falar:\n"+
-                            "Adam:\n Ei, Sofia! Desculpe interromper seu momento, "+
+                            "\nAdam:\n Ei, Sofia! Desculpe interromper seu momento, "+
                             "mas sua música tocou profundamente em mim.\n Sua voz é simplesmente incrível.\n"+
-                            "Sofia sorri, agradecida pelo elogio, mas também cautelosa."+
-                            "Sofia:\n Obrigada, Adam. Fico feliz em saber que você "+
+                            "\nSofia sorri, agradecida pelo elogio, mas também cautelosa."+
+                            "\nSofia:\n Obrigada, Adam. Fico feliz em saber que você "+
                             "aprecia minha música.\n"+
-                            "Adam:\n Você sabe, eu adoraria poder conversar com "+
+                            "\nAdam:\n Você sabe, eu adoraria poder conversar com "+
                             "você mais depois da sua apresentação. Eu gostaria de conhecê-la melhor."+
-                            "Sofia olha para ele, sua expressão revelando uma mistura de emoções.\n"+
-                            "Qual a sua escolha? Sofia deve ter ou não o encontro com Adam?\n";
-        String escolha1 = " - Digite Sim para terem o encontro.\n";
-        String escolha2 = " - Digite Nao para terem o encontro.\n";
-        String final1 = "Sofia, sentindo-se insegura e não pronta para"+
+                            "\nSofia olha para ele, sua expressão revelando uma mistura de emoções.\n"+
+                            "\nQual a sua escolha? Sofia deve ter ou não o encontro com Adam?\n";
+        String escolha1 = "\n - Digite Sim para terem o encontro.\n";
+        String escolha2 = "\n - Digite Nao para terem o encontro.\n";
+        String final1 = "\nSofia, sentindo-se insegura e não pronta para"+
                         " se envolver emocionalmente,\n educadamente recusa o pedido de"+
                         " Adam. Embora Adam fique desapontado, \nele respeita a decisão"+
                         " de Sofia e a admira ainda mais por sua honestidade.\n"+
-                        "Enquanto Sofia continua a cantar no palco, os tons de frieza"+
+                        "\nEnquanto Sofia continua a cantar no palco, os tons de frieza"+
                         " que ecoam diante da música\n cantada por ela envolvem Adam,"+
                         " que embora triste,\ndeixa o pub com a esperança de que "+
                         "seus caminhos possam se cruzar novamente no futuro.";
-        String cap2 ="Adam ficou extremamente feliz por sofia ter aceitado seu convite."+
+        String cap2 ="\nAdam ficou extremamente feliz por sofia ter aceitado seu convite."+
                         "\n \n Sofia e Adam passam o número um do outro para"+
                         " que possam conversar por mensagens mais tarde naquele mesmo dia.\n"+
-                        "Adam:\n Sofia, estou feliz que você tenha concordado"+
+                        "\nAdam:\n Sofia, estou feliz que você tenha concordado"+
                         " em ter esse encontro comigo. Eu estava ansioso para passar mais "+
                         "tempo com você.\n Que tal irmos ao Mariner's Bistro & Lounge? A comida"+
                         " é incrível, e tenho certeza de que você irá adorar o ambiente.\n"+
-                        "Sofia: sorri suavemente\n Isso parece maravilhoso. "+
+                        "\nSofia: sorri suavemente\n Isso parece maravilhoso. "+
                         "Adoro a ideia de um jantar à beira-mar. Parece o cenário perfeito"+
                         " para nos conhecermos melhor\n"+
-                        "Adam: empolgado\n Ótimo!\n"+
-                        "No dia seguinte, Sofia e Adam se encontram em um "+
+                        "\nAdam: empolgado\n Ótimo!\n"+
+                        "\nNo dia seguinte, Sofia e Adam se encontram em um "+
                         "aconchegante restaurante à beira-mar.\n O clima é descontraído "+
                         "e a conversa flui naturalmente. Durante o jantar, eles compartilham"+
                         " histórias engraçadas e risadas contagiantes.\n A química entre "+
                         "eles é palpável, e ambos estão se divertindo.\n Enquanto saboreiam a"+
                         " sobremesa, uma pausa ocorre na conversa, e é nesse momento que"+
                         " Sofia decide abrir o coração:\n"+
-                        "Sofia:\n Adam, estou realmente gostando de passar esse"+
+                        "\nSofia:\n Adam, estou realmente gostando de passar esse"+
                         " tempo com você.\n Sinto que temos uma conexão especial. \nMas também "+
                         "tenho medo de me machucar novamente.\n O que você procura em um "+
                         "relacionamento? O que você espera de nós?"+
-                        " A escolha que você fizer determinará a direção do relacionamento entre os dois.\n";
-        String escolha3 = " - Digite 1 para uma resposta positiva e encorajadora\n";
-        String escolha4 = " - Digite 2 para uma resposta mais cautelosa e incerta.\n";
-        String final2 ="Adam:\n Sofia, desde o momento em que nos "+
+                        "\n A escolha que você fizer determinará a direção do relacionamento entre os dois.\n";
+        String escolha3 = "\n - Digite 1 para uma resposta positiva e encorajadora\n";
+        String escolha4 = "\n - Digite 2 para uma resposta mais cautelosa e incerta.\n";
+        String final2 ="\nAdam:\n Sofia, desde o momento em que nos "+
                         "conhecemos, senti algo especial entre nos.\n Eu tambem estou "+
                         "gostando de passar esse tempo com voce.\n No entanto, entendo "+
                         "seus medos e quero que saiba que estou disposto a construir "+
@@ -72,7 +72,7 @@ public static void printString(String a) {
                         "comprometido, e acho que temos potencial para isso. \nVamos "+
                         "levar as coisas devagar, respeitando o tempo um do outro e "+
                         "permitindo que nosso amor cresça naturalmente."
-                        +"Sofia se sente encorajada e emocionada com a "+
+                        +"\nSofia se sente encorajada e emocionada com a "+
                         "resposta positiva de Adam. \nEla vê nele um parceiro em potencial, "+
                         "alguem disposto a investir tempo e esforço para construir"+
                         " um relacionamento significativo. \nAmbos concordam em levar "+
@@ -85,12 +85,12 @@ public static void printString(String a) {
                         "uma vida juntos, enfrentando as adversidades de mãos dadas "+
                         "e encontrando alegria nas pequenas coisas. \nEles criam memórias "+
                         "duradouras e vivem uma história de amor cheia de felicidade e realizações";
-        String final3 = " Adam:\n Sofia, também estou apreciando muito "+
+        String final3 = "\nAdam:\n Sofia, também estou apreciando muito "+
                         "a nossa companhia, mas confesso que estou um pouco incerto"+
                         " sobre o futuro. \nAcho que temos uma conexão especial, mas"+
                         " não quero apressar as coisas. \nVamos continuar aproveitando"+
                         " esses momentos juntos e ver onde eles nos levam."+
-                        "Apesar de Sofia esperar uma resposta mais encorajadora,"+
+                        "\nApesar de Sofia esperar uma resposta mais encorajadora,"+
                         " \nela entende a cautela de Adam e decide respeitar suas palavras."+
                         " \nEles continuam a sair e se conhecer, mas as incertezas e os receios"+
                         " permanecem presentes em seu relacionamento. \nA falta de clareza "+
@@ -104,6 +104,11 @@ public static void printString(String a) {
                         "levando a uma separação dolorosa.";
         personagem  Sofia = new personagem("Sofia", 100);
         personagem  Adam = new personagem("Adam", 50);
+        capitulo capitulo1 = new capitulo(cap1, escolha1, escolha2, Adam, Sofia, 0);
+        capitulo fim1 = new capitulo(final1, null, null, Sofia, Adam, 0);
+        capitulo capitulo2 = new capitulo(cap2, escolha3, escolha4, Sofia, Adam,0);
+        capitulo fim2 = new capitulo(final2, null, null, Sofia, Adam, 0);
+        capitulo fim3 = new capitulo(final3, null, null, Sofia, Adam, 0);
         boolean amor = true;
         //INTRODUÇÂO
         Scanner scanner = new Scanner(System.in);
