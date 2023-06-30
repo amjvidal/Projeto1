@@ -18,6 +18,10 @@ public class capitulo {
     }
 
     public void mostrar(String capitulo, String escolha1, String escolha2, int mudanca){
+        System.out.println(this.capitulo);
+        System.out.println(this.escolha1);
+        System.out.println(this.escolha2);
+
         
     }
 }
