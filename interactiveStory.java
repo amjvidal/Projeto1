@@ -29,8 +29,6 @@ public static void printString(String a) {
                             "você mais depois da sua apresentação. Eu gostaria de conhecê-la melhor.\n"+
                             "\nSofia olha para ele, sua expressão revelando uma mistura de emoções.\n";
         String pergunta1 = "Qual a sua escolha? Sofia deve ter ou n\u00E3o o encontro com Adam?\n";
-        String escolha1 = "\n - Digite Sim para terem o encontro.\n";
-        String escolha2 = "\n - Digite Nao para NÂO terem o encontro.\n";
         String final1 = "\nSofia, sentindo-se insegura e não pronta para"+
                         " se envolver emocionalmente,\n educadamente recusa o pedido de"+
                         " Adam. Embora Adam fique desapontado, \nele respeita a decisão"+
@@ -61,10 +59,8 @@ public static void printString(String a) {
         String pergunta2 ="\nSofia:\n Adam, estou realmente gostando de passar esse"+
                         " tempo com você.\n Sinto que temos uma conexão especial. \nMas também "+
                         "tenho medo de me machucar novamente.\n O que você procura em um "+
-                        "relacionamento? O que você espera de nós?"+
+                        "relacionamento? O que você espera de nós?\n"+
                         "\n A escolha que você fizer determinará a direção do relacionamento entre os dois.\n";
-        String escolha3 = "\n - Digite ESCOLHA POSITIVA para uma resposta positiva e encorajadora\n";
-        String escolha4 = "\n - Digite ESCOLHA INCERTA para uma resposta mais cautelosa e incerta.\n";
         String final2 ="\nAdam:\n Sofia, desde o momento em que nos "+
                         "conhecemos, senti algo especial entre nos.\n Eu tambem estou "+
                         "gostando de passar esse tempo com voce.\n No entanto, entendo "+
@@ -103,54 +99,67 @@ public static void printString(String a) {
                         " eles podem perceber que as diferenças fundamentais são difíceis de"+
                         " superar, \nresultando em um relacionamento instável e eventualmente "+
                         "levando a uma separação dolorosa.";
-            String recusa = "nao";
-            String aceita = "sim";
-            String resPositiva = "escolha positiva";
-            String resIncerta = "escolha incerta";
+            String[] respostas1 = new String[2];
+            respostas1[0] = "nao";
+            respostas1[1] = "sim";
+            String[] respostas2 = new String[2];
+            respostas2[0] = "escolha positiva";
+            respostas2[1] = "escolha incerta";
+            String[] escolhas1 = new String[2];
+            escolhas1[0] = "\n - Digite Sim para terem o encontro.\n";
+            escolhas1[1] = "\n - Digite Nao para NÂO terem o encontro.\n";
+            String[] escolhas2 = new String[2];
+            escolhas2[0] = "\n - Digite ESCOLHA POSITIVA para uma resposta positiva e encorajadora\n";
+            escolhas2[1] = "\n - Digite ESCOLHA INCERTA para uma resposta mais cautelosa e incerta.\n";
         personagem  Sofia = new personagem("Sofia", 100);
         personagem  Adam = new personagem("Adam", 50);
-        capitulo capitulo1 = new capitulo(cap1, pergunta1, escolha1, escolha2, aceita, recusa, Adam, Sofia, 0, 0);
-        capitulo fim1 = new capitulo(final1,"", "", "","","",  Sofia, Adam, 0,-50);
-        capitulo capitulo2 = new capitulo(cap2, pergunta2, escolha3, escolha4, resPositiva, resIncerta, Sofia, Adam,0,50);
-        capitulo fim2 = new capitulo(final2, "", "", "", "","",Sofia, Adam, 100,100);
-        capitulo fim3 = new capitulo(final3, "", "", "","","", Sofia, Adam, -50,-100);
+        capitulo capitulo1 = new capitulo(cap1, pergunta1, escolhas1,
+         respostas1, Adam, Sofia, 0, 0);
+        capitulo fim1 = new capitulo(final1,"",null,
+         null,  Sofia, Adam, 0,-50);
+        capitulo capitulo2 = new capitulo(cap2, pergunta2,escolhas2,
+         respostas2, Sofia, Adam,0,50);
+        capitulo fim2 = new capitulo(final2, "",null,
+        null,Sofia, Adam, 100,100);
+        capitulo fim3 = new capitulo(final3, "",null,
+        null, Sofia, Adam, -50,-100);
         boolean amor = true;
         //INTRODUÇÂO
         Scanner scanner = new Scanner(System.in);
         printString("Shades of Charm, Maybe a happy story. \n");
-        capitulo1.mostrar(cap1, pergunta1, escolha1, escolha2, 0, 0);
+        capitulo1.mostrar();
         // 1° ESCOLHA
         int contador = 0;
         while(contador == 0 && amor == true){
 
-            int n1 = capitulo1.escolher(scanner, recusa, aceita);
+            int n1 = capitulo1.escolher( respostas1);
             
-            if(n1 == 1){
+            if(n1 == 0){
                 // 1. FINAL - A Recusa de Sofia
                 
-                fim1.mostrar(final1, "", "", "", 0, -50);
+                fim1.mostrar();
                 contador++;
             }
-            else if(n1 == 2){ 
+            else if(n1 == 1){ 
                     //cap2
-                    capitulo2.mostrar(cap2, pergunta2, escolha3, escolha4, 0, 50);
+                    capitulo2.mostrar();
                
                     int contador2 = 0;
                     while(contador2==0 && amor == true){
-                    int n2 = capitulo2.escolher(scanner, resPositiva, resIncerta);
-                    if (n2 == 1){
+                    int n2 = capitulo2.escolher( respostas2);
+                    if (n2 == 0){
                         //2. FINAL - O Encontro Promissor:
                        
-                        fim2.mostrar(final2, "", "", "", 100, 100);
+                        fim2.mostrar();
 
                         contador++;
                         contador2++;
                     }
-                    else if(n2 == 2){
+                    else if(n2 == 1){
                         //3. FINAL - O Relacionamento Complicado:
                         
                         
-                        fim3.mostrar(final3, "", "", "", -50, -100);
+                        fim3.mostrar();
                         contador++;
                         contador2++;                    
                     }
