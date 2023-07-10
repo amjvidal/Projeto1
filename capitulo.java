@@ -27,11 +27,14 @@ public class capitulo {
     public void mostrar(){
         System.out.println(this.capitulo);
         System.out.println(this.pergunta);
+        if(escolhas!=null){
         int contador = 0;
         for (String str : escolhas){
             System.out.println("Opção " + (contador+1) + ": "+ str);
             contador++;
         }
+    }
+        
         if (mudanca1 != 0){
             this.personagem1.mudapaixao(mudanca1);}
         if (mudanca2 != 0){
