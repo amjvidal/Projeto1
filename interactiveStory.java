@@ -99,6 +99,7 @@ public static void printString(String a) {
                         " eles podem perceber que as diferenças fundamentais são difíceis de"+
                         " superar, \nresultando em um relacionamento instável e eventualmente "+
                         "levando a uma separação dolorosa.";
+            // CRIAÇÃO DOS ARRAYS DAS RESPOSTAS E DAS ESCOLHAS
             String[] respostas1 = new String[2];
             respostas1[0] = "nao";
             respostas1[1] = "sim";
@@ -111,6 +112,7 @@ public static void printString(String a) {
             String[] escolhas2 = new String[2];
             escolhas2[0] = "\n - Digite ESCOLHA POSITIVA para uma resposta positiva e encorajadora\n";
             escolhas2[1] = "\n - Digite ESCOLHA INCERTA para uma resposta mais cautelosa e incerta.\n";
+        // DECLARAÇÃO DOS PERSONAGENS E CAPITULOS
         personagem  Sofia = new personagem("Sofia", 100);
         personagem  Adam = new personagem("Adam", 50);
         capitulo capitulo1 = new capitulo(cap1, pergunta1, escolhas1,

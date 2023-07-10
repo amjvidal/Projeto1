@@ -39,7 +39,7 @@ public class capitulo {
     }
     
     
-    
+    // O METEDO COMPARA A RESPOSTA DO USUARIOS COM INDICE DO ARRAY
     int escolher( String[] respostas){
         String escolha = scan.nextLine();
         if(escolha.equalsIgnoreCase(respostas[0])){
