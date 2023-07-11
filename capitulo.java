@@ -43,17 +43,25 @@ public class capitulo {
     
     
     // O METEDO COMPARA A RESPOSTA DO USUARIOS COM INDICE DO ARRAY
-    int escolher( String[] respostas){
+    int escolher(String[] respostas){
         String escolha = scan.nextLine();
-        if(escolha.equalsIgnoreCase(respostas[0])){
-            return 0;
+        int resultado = 0;
+        for(int i = 0; i < respostas.length; i++){
+            if(respostas[i].equalsIgnoreCase(escolha)){
+                resultado++;
+            }
         }
-        else if(escolha.equalsIgnoreCase(respostas[1])){
-            return 1;
-        }
-        else{
-            return 3;
-        }
+        return resultado;
+        
+        // if(escolha.equalsIgnoreCase(respostas[0])){
+        //     return 0;
+        // }
+        // else if(escolha.equalsIgnoreCase(respostas[1])){
+        //     return 1;
+        // }
+        // else{
+        //     return 3;
+        // }
 
     }
 }

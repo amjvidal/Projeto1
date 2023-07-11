@@ -120,7 +120,7 @@ public static void printString(String a) {
         capitulo fim1 = new capitulo(final1,"",null,
          null,  Sofia, Adam, 0,-50);
         capitulo capitulo2 = new capitulo(cap2, pergunta2,escolhas2,
-         respostas2, Sofia, Adam,0,50);
+         respostas2, Sofia, Adam,0,0);
         capitulo fim2 = new capitulo(final2, "",null,
         null,Sofia, Adam, 100,100);
         capitulo fim3 = new capitulo(final3, "",null,
