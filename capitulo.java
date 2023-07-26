@@ -50,7 +50,8 @@ public class capitulo {
                     return;
             }
         }
-         System.out.println("Escolha invalida! tente novamente!");
+         System.out.println("Escolha invalida! Tente novamente!");
+         System.out.println(this.pergunta);
     }
 
 
