@@ -28,7 +28,9 @@ public static void printString(String a) {
                             "\nAdam:\n Você sabe, eu adoraria poder conversar com "+
                             "você mais depois da sua apresentação. Eu gostaria de conhecê-la melhor.\n"+
                             "\nSofia olha para ele, sua expressão revelando uma mistura de emoções.\n";
-        String pergunta1 = "Qual a sua escolha? Sofia deve ter ou n\u00E3o o encontro com Adam?\n";
+        String pergunta1 = "Qual a sua escolha? Sofia deve ter ou n\u00E3o o encontro com Adam?\n"+
+                            "\n - Digite Sim para terem o encontro."+
+                            "\n - Digite Nao para NÂO terem o encontro.\n";
         String final1 = "\nSofia, sentindo-se insegura e não pronta para"+
                         " se envolver emocionalmente,\n educadamente recusa o pedido de"+
                         " Adam. Embora Adam fique desapontado, \nele respeita a decisão"+
@@ -36,7 +38,7 @@ public static void printString(String a) {
                         "\nEnquanto Sofia continua a cantar no palco, os tons de frieza"+
                         " que ecoam diante da música\n cantada por ela envolvem Adam,"+
                         " que embora triste,\ndeixa o pub com a esperança de que "+
-                        "seus caminhos possam se cruzar novamente no futuro.";
+                        "seus caminhos possam se cruzar novamente no futuro.\n FIM!";
         String cap2 ="\nAdam ficou extremamente feliz por sofia ter aceitado seu convite."+
                         "\n \n Sofia e Adam passam o número um do outro para"+
                         " que possam conversar por mensagens mais tarde naquele mesmo dia.\n"+
@@ -60,7 +62,9 @@ public static void printString(String a) {
                         " tempo com você.\n Sinto que temos uma conexão especial. \nMas também "+
                         "tenho medo de me machucar novamente.\n O que você procura em um "+
                         "relacionamento? O que você espera de nós?\n"+
-                        "\n A escolha que você fizer determinará a direção do relacionamento entre os dois.\n";
+                        "\n A escolha que você fizer determinará a direção do relacionamento entre os dois."+
+                        "\n - Digite ESCOLHA INCERTA para uma resposta mais cautelosa e incerta.\n"+
+                        "\n - Digite ESCOLHA ;POSITIVA para uma resposta positiva e encorajadora\n\n";
         String final2 ="\nAdam:\n Sofia, desde o momento em que nos "+
                         "conhecemos, senti algo especial entre nos.\n Eu tambem estou "+
                         "gostando de passar esse tempo com voce.\n No entanto, entendo "+
@@ -81,7 +85,7 @@ public static void printString(String a) {
                         "apoio mútuo e crescimento pessoal. \nSofia e Adam constroem "+
                         "uma vida juntos, enfrentando as adversidades de mãos dadas "+
                         "e encontrando alegria nas pequenas coisas. \nEles criam memórias "+
-                        "duradouras e vivem uma história de amor cheia de felicidade e realizações";
+                        "duradouras e vivem uma história de amor cheia de felicidade e realizações.\n FIM!";
         String final3 = "\nAdam:\n Sofia, também estou apreciando muito "+
                         "a nossa companhia, mas confesso que estou um pouco incerto"+
                         " sobre o futuro. \nAcho que temos uma conexão especial, mas"+
@@ -98,82 +102,30 @@ public static void printString(String a) {
                         " suas expectativas e desejos pessoais. \nÀ medida que o tempo passa,"+
                         " eles podem perceber que as diferenças fundamentais são difíceis de"+
                         " superar, \nresultando em um relacionamento instável e eventualmente "+
-                        "levando a uma separação dolorosa.";
+                        "levando a uma separação dolorosa.\n FIM!";
             // CRIAÇÃO DOS ARRAYS DAS RESPOSTAS E DAS ESCOLHAS
-            String[] respostas1 = new String[2];
-            respostas1[0] = "nao";
-            respostas1[1] = "sim";
-            String[] respostas2 = new String[2];
-            respostas2[0] = "escolha positiva";
-            respostas2[1] = "escolha incerta";
-            String[] escolhas1 = new String[2];
-            escolhas1[0] = "\n - Digite Sim para terem o encontro.\n";
-            escolhas1[1] = "\n - Digite Nao para NÂO terem o encontro.\n";
-            String[] escolhas2 = new String[2];
-            escolhas2[0] = "\n - Digite ESCOLHA POSITIVA para uma resposta positiva e encorajadora\n";
-            escolhas2[1] = "\n - Digite ESCOLHA INCERTA para uma resposta mais cautelosa e incerta.\n";
+            
         // DECLARAÇÃO DOS PERSONAGENS E CAPITULOS
+        escolha[] escolhas1 = new escolha[2];
+        escolha[] escolhas2 = new escolha[2];
         personagem  Sofia = new personagem("Sofia", 100);
         personagem  Adam = new personagem("Adam", 50);
-        capitulo capitulo1 = new capitulo(cap1, pergunta1, escolhas1,
-         respostas1, Adam, Sofia, 0, 0);
-        capitulo fim1 = new capitulo(final1,"",null,
-         null,  Sofia, Adam, 0,-50);
-        capitulo capitulo2 = new capitulo(cap2, pergunta2,escolhas2,
-         respostas2, Sofia, Adam,0,0);
-        capitulo fim2 = new capitulo(final2, "",null,
-        null,Sofia, Adam, 100,100);
-        capitulo fim3 = new capitulo(final3, "",null,
-        null, Sofia, Adam, -50,-100);
-        boolean amor = true;
+        capitulo capitulo1 = new capitulo(cap1, pergunta1, escolhas1, Adam, Sofia, 0, 0);
+        capitulo fim1 = new capitulo(final1,"", null,  Sofia, Adam, 0,-50);
+        capitulo capitulo2 = new capitulo(cap2, pergunta2, escolhas2, Sofia, Adam,0,0);
+        capitulo fim2 = new capitulo(final2, "", null, Sofia, Adam, 100,100);
+        capitulo fim3 = new capitulo(final3, "", null, Sofia, Adam, -50,-100); 
+        
+        escolhas1[0] = new escolha("nao", fim1);
+        escolhas1[1] = new escolha("sim",capitulo2);
+        escolhas2[0] = new escolha("escolha positiva",fim2);
+        escolhas2[1] = new escolha("escolha incerta",fim3);
+        
         //INTRODUÇÂO
         Scanner scanner = new Scanner(System.in);
         printString("Shades of Charm, Maybe a happy story. \n");
-        capitulo1.mostrar();
-        // 1° ESCOLHA
-        int contador = 0;
-        while(contador == 0 && amor == true){
-
-            int n1 = capitulo1.escolher( respostas1);
-            
-            if(n1 == 0){
-                // 1. FINAL - A Recusa de Sofia
-                
-                fim1.mostrar();
-                contador++;
-            }
-            else if(n1 == 1){ 
-                    //cap2
-                    capitulo2.mostrar();
-               
-                    int contador2 = 0;
-                    while(contador2==0 && amor == true){
-                    int n2 = capitulo2.escolher( respostas2);
-                    if (n2 == 0){
-                        //2. FINAL - O Encontro Promissor:
-                       
-                        fim2.mostrar();
-
-                        contador++;
-                        contador2++;
-                    }
-                    else if(n2 == 1){
-                        //3. FINAL - O Relacionamento Complicado:
-                        
-                        
-                        fim3.mostrar();
-                        contador++;
-                        contador2++;                    
-                    }
-                    else{
-                        printString("Resposta Incorreta, Por favor responda novamente!");
-                    }
-                }
-            }
-            else{
-                printString("Resposta Incorreta, Por favor responda novamente.");
-            }
-        }
-scanner.close();
+        capitulo raiz = capitulo1;
+        raiz.executar();
+        scanner.close();
 }
 }
