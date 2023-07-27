@@ -64,7 +64,7 @@ public static void printString(String a) {
                         "relacionamento? O que você espera de nós?\n"+
                         "\n A escolha que você fizer determinará a direção do relacionamento entre os dois."+
                         "\n - Digite ESCOLHA INCERTA para uma resposta mais cautelosa e incerta.\n"+
-                        "\n - Digite ESCOLHA ;POSITIVA para uma resposta positiva e encorajadora\n\n";
+                        "\n - Digite ESCOLHA POSITIVA para uma resposta positiva e encorajadora\n\n";
         String final2 ="\nAdam:\n Sofia, desde o momento em que nos "+
                         "conhecemos, senti algo especial entre nos.\n Eu tambem estou "+
                         "gostando de passar esse tempo com voce.\n No entanto, entendo "+
