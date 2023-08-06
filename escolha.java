@@ -1,6 +1,6 @@
 package P2;
 
-class escolha {
+public class escolha {
     private String resposta;
     private capitulo proximo;
     

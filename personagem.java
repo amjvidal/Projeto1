@@ -1,8 +1,8 @@
 package P2;
 
 public class personagem {
-    String nome;
-    int paixao;
+    private String nome;
+    private int paixao;
 
 public personagem(String nome, int paixao){
     this.nome = nome;
@@ -33,5 +33,26 @@ boolean mudapaixao (int mudanca){
         return amor;
     }
 }
+
+
+    
+    public String getNome() {
+        return nome;
+    }
+
+    
+    public void setNome(String nome) {
+        this.nome = nome;
+    }
+
+   
+    public int getPaixao() {
+        return paixao;
+    }
+
+    
+    public void setPaixao(int paixao) {
+        this.paixao = paixao;
+    }
 
 }
