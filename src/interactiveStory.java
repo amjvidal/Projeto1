@@ -1,7 +1,15 @@
 package src;
 
-
 import java.util.Scanner;
+
+import java.io.FileNotFoundException;
+import java.io.FileReader;
+import java.io.IOException;
+
+import org.json.simple.JSONObject;
+import org.json.simple.parser.JSONParser;
+import org.json.simple.parser.ParseException;
+
 public class interactiveStory {
 
 //Criando uma função para dar print e não ficar muito poluido de System.out.println no codigo
