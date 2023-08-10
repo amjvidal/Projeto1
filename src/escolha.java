@@ -1,4 +1,6 @@
-package P2;
+package src;
+
+
 
 public class escolha {
     private String resposta;

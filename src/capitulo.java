@@ -1,4 +1,6 @@
-package P2;
+package src;
+
+
 import java.util.Scanner;
 public class capitulo {
     private String capitulo;
