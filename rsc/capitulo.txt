@@ -1,6 +1,6 @@
 capitulo
 cap1
-Era uma vez uma mulher misteriosa chamada Sofia. Ela vivia em uma cidade ensolarada beira-mar, onde as ondas quebravam suavemente na areia. Sofia era conhecida por sua voz encantadora e melancolica, e todas as noites ela se apresentava em um pub local, onde sua musica ecoava pelas paredes. Foi em uma dessas noites que Sofia conheceu um homem intrigante chamado Adam. Enquanto Sofia cantava suas melodias envolventes, Adam estava lá, perdido em suas letras profundas e na beleza de sua voz. Durante uma pausa na apresentação de Sofia, Adam se aproxima dela no bar do pub à beira-mar. Ele olha para ela com admiração e um toque de nervosismo, antes de finalmente reunir coragem para falar: Adam: Ei, Sofia! Desculpe interromper seu momento, mas sua música tocou profundamente em mim. Sua voz é simplesmente incrível. Sofia sorri, agradecida pelo elogio, mas também cautelosa. Sofia: Obrigada, Adam. Fico feliz em saber que você aprecia minha música. Adam: Você sabe, eu adoraria poder conversar com você mais depois da sua apresentação. Eu gostaria de conhecê-la melhor. Sofia olha para ele, sua expressão revelando uma mistura de emoções.
+Era uma vez uma mulher misteriosa chamada Sofia. Ela vivia em uma cidade ensolarada beira-mar, onde as ondas quebravam suavemente na areia. Sofia era conhecida por sua voz encantadora e melancolica, e todas as noites ela se apresentava em um pub local, onde sua musica ecoava pelas paredes. Foi em uma dessas noites que Sofia conheceu um homem intrigante chamado Adam. Enquanto Sofia cantava suas melodias envolventes, Adam estava lá, perdido em suas letras profundas e na beleza de sua voz. Durante uma pausa na apresentação de Sofia, Adam se aproxima dela no bar do pub à beira-mar. Ele olha para ela com admiração e um toque de nervosismo, antes de finalmente reunir coragem para falar: Adam: Ei, Sofia! Desculpe interromper seu momento, mas sua música tocou profundamente em mim. Sua voz é simplesmente incrível. Sofia sorri, agradecida pelo elogio, mas também cautelosa. Sofia: Obrigada, Adam. Fico feliz em saber que você aprecia minha música. Adam: Você sabe, eu adoraria poder conversar com você mais depois da sua apresentação. Eu gostaria de conhecê-la melhor. Sofia olha para ele, sua expressão revelando uma mistura de emoções. Digite Sim para terem o encontro., Digite Nao para NAO terem o encontro.
 Qual a sua escolha? Sofia deve ter ou não o encontro com Adam?
 mulher
 homem
@@ -8,13 +8,15 @@ homem
 0
 
 escolha
-escolhas1
-Digite Sim para terem o encontro.
-Digite Nao para NAO terem o encontro.
-sim
+cap1
 nao
-cap2
 fim1
+
+escolha
+cap1
+sim
+cap2
+
 
 
 capitulo
@@ -29,7 +31,7 @@ homem
 
 capitulo
 cap2
-Adam ficou extremamente feliz por sofia ter aceitado seu convite. Sofia e Adam passam o número um do outro para que possam conversar por mensagens mais tarde naquele mesmo dia. Adam: Sofia, estou feliz que você tenha concordado em ter esse encontro comigo. Eu estava ansioso para passar mais tempo com você. Que tal irmos ao Mariner's Bistro & Lounge? A comida é incrível, e tenho certeza de que você irá adorar o ambiente. Sofia: sorri suavemente Isso parece maravilhoso. Adoro a ideia de um jantar à beira-mar. Parece o cenário perfeito para nos conhecermos melhor Adam: empolgado Ótimo! No dia seguinte, Sofia e Adam se encontram em um aconchegante restaurante à beira-mar. O clima é descontraído e a conversa flui naturalmente. Durante o jantar, eles compartilham histórias engraçadas e risadas contagiantes. A química entre eles é palpável, e ambos estão se divertindo. Enquanto saboreiam a sobremesa, uma pausa ocorre na conversa, e é nesse momento que Sofia decide abrir o coração:
+Adam ficou extremamente feliz por sofia ter aceitado seu convite. Sofia e Adam passam o número um do outro para que possam conversar por mensagens mais tarde naquele mesmo dia. Adam: Sofia, estou feliz que você tenha concordado em ter esse encontro comigo. Eu estava ansioso para passar mais tempo com você. Que tal irmos ao Mariner's Bistro & Lounge? A comida é incrível, e tenho certeza de que você irá adorar o ambiente. Sofia: sorri suavemente Isso parece maravilhoso. Adoro a ideia de um jantar à beira-mar. Parece o cenário perfeito para nos conhecermos melhor Adam: empolgado Ótimo! No dia seguinte, Sofia e Adam se encontram em um aconchegante restaurante à beira-mar. O clima é descontraído e a conversa flui naturalmente. Durante o jantar, eles compartilham histórias engraçadas e risadas contagiantes. A química entre eles é palpável, e ambos estão se divertindo. Enquanto saboreiam a sobremesa, uma pausa ocorre na conversa, e é nesse momento que Sofia decide abrir o coração: - Digite ESCOLHA INCERTA para uma resposta mais cautelosa e incerta., - Digite ESCOLHA POSITIVA para uma resposta positiva e encorajadora.
 Sofia: Adam, estou realmente gostando de passar esse tempo com você. Sinto que temos uma conexão especial.Mas também tenho medo de me machucar novamente. O que você procura em um relacionamento? O que você espera de nós?    -A escolha que você fizer determinará a direção do relacionamento entre os dois.
 mulher
 homem
@@ -37,13 +39,16 @@ homem
 0
 
 escolha
-escolhas2
-- Digite ESCOLHA INCERTA para uma resposta mais cautelosa e incerta.
-- Digite ESCOLHA POSITIVA para uma resposta positiva e encorajadora.
-escolha incerta
+cap2
 escolha positiva
-fim3
 fim2
+
+escolha
+cap2
+escolha incerta
+fim3
+
+
 
 capitulo
 fim2

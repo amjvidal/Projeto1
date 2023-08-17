@@ -1,11 +1,11 @@
 package src;
 
-
+import java.util.ArrayList;
 import java.util.Scanner;
 public class capitulo {
     private String capitulo;
     private String pergunta;
-    private escolha[] escolhas;
+    private ArrayList<escolha> escolhas;
     private personagem personagem1;
     private personagem personagem2;
     private int mudanca1;
@@ -13,11 +13,11 @@ public class capitulo {
     Scanner scan = new Scanner(System.in);
     
 
-    public capitulo(String capitulo, String pergunta, escolha[] escolhas, personagem personagem1,
+    public capitulo(String capitulo, String pergunta, ArrayList<escolha> escolhas, personagem personagem1,
       personagem personagem2, int mudanca1, int mudanca2){
         this.capitulo = capitulo;
         this.pergunta = pergunta;
-        this.escolhas = escolhas;
+        this.escolhas = new ArrayList<>();
         this.personagem1 = personagem1;
         this.personagem2 = personagem2;
         this.mudanca1 = mudanca1;
@@ -55,9 +55,15 @@ public class capitulo {
          System.out.println("Escolha invalida! Tente novamente!");
          System.out.println(this.pergunta);
     }
-
-
+    
+       
     }
+
+    public void adicionarEscolha(escolha Escolha){
+        escolhas.add(Escolha);
+    }
+
+
     public void executar(){
         mostrar();
         escolher();
@@ -83,14 +89,11 @@ public class capitulo {
     }
 
     
-    public escolha[] getEscolhas() {
+    public ArrayList<escolha> getEscolhas() {
         return escolhas;
     }
 
    
-    public void setEscolhas(escolha[] escolhas) {
-        this.escolhas = escolhas;
-    }
 
     
     public personagem getPersonagem1() {

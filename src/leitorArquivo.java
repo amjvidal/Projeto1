@@ -2,6 +2,7 @@ package src;
 
 import java.io.File;
 import java.io.FileNotFoundException;
+import java.util.ArrayList;
 import java.util.HashMap;
 import java.util.Scanner;
 
@@ -35,29 +36,36 @@ public class leitorArquivo {
 
     HashMap<String, capitulo> lerCapitulo(String caminho, HashMap<String, personagem> personagens){
         HashMap<String, capitulo> capitulos = new HashMap<String, capitulo>();
-        File arquivo = new File(caminho);
+        File arquivo2 = new File(caminho);
         try{
-        Scanner escaneador = new Scanner(arquivo);
+        Scanner escaneador = new Scanner(arquivo2);
         System.out.println("Lendo Capitulos...");
         while (escaneador.hasNextLine()){
             String linha = escaneador.nextLine();
             if(linha.equalsIgnoreCase("capitulo")){
-                String id = escaneador.nextLine();
+                ArrayList<escolha> escolha = new ArrayList<escolha>();
+                String refOrigem = escaneador.nextLine();
                 String texto = escaneador.nextLine();
                 String pergunta = escaneador.nextLine();
                 String personagem1 = escaneador.nextLine();
                 String personagem2 = escaneador.nextLine();
                 int mudanca1 = Integer.parseInt(escaneador.nextLine());
                 int mudanca2 = Integer.parseInt(escaneador.nextLine());
-            
+                capitulo Capitulo = new capitulo(texto, pergunta, escolha, personagens.get("homem"), personagens.get("mulher"), mudanca1, mudanca2);
+                capitulos.put(refOrigem, Capitulo);
+            }
+            else if(linha.equalsIgnoreCase("escolha")){
+                String refOrigem = escaneador.nextLine();
+                String escolha = escaneador.nextLine();
+                String refSaida = escaneador.nextLine();
+                capitulos.get(refOrigem).adicionarEscolha(new escolha(escolha, capitulos.get(refSaida)));
 
             }
-
         }
         escaneador.close();
         }
         catch(FileNotFoundException e){
-
+             System.out.println("O Arquivo não foi encontrado no "+ caminho+ " Especificado.");
         }
         
         return capitulos;
