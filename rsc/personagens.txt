@@ -1,0 +1,10 @@
+personagem
+mulher
+Sofia
+100
+
+personagem
+homem
+Adam
+50
+
