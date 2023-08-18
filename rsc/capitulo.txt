@@ -7,18 +7,6 @@ homem
 0
 0
 
-escolha
-cap1
-nao
-fim1
-
-escolha
-cap1
-sim
-cap2
-
-
-
 capitulo
 fim1
 Sofia, sentindo-se insegura e não pronta para se envolver emocionalmente, educadamente recusa o pedido de Adam. Embora Adam fique desapontado, ele respeita a decisão de Sofia e a admira ainda mais por sua honestidade. Enquanto Sofia continua a cantar no palco, os tons de frieza que ecoam diante da música cantada por ela envolvem Adam, que embora triste,deixa o pub com a esperança de que seus caminhos possam se cruzar novamente no futuro. FIM!
@@ -38,17 +26,6 @@ homem
 0
 0
 
-escolha
-cap2
-escolha positiva
-fim2
-
-escolha
-cap2
-escolha incerta
-fim3
-
-
 
 capitulo
 fim2
@@ -67,3 +44,23 @@ mulher
 homem
 -50
 -100
+
+escolha
+cap1
+nao
+fim1
+
+escolha
+cap1
+sim
+cap2
+
+escolha
+cap2
+escolha positiva
+fim2
+
+escolha
+cap2
+escolha incerta
+fim3

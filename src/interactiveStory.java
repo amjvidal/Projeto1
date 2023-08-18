@@ -12,7 +12,7 @@ public static void printString(String a) {
     public static void main(String[] args) {
         leitorArquivo leitor = new leitorArquivo();
         HashMap<String, personagem> personagens = leitor.lerPersonagens("rsc/personagens.txt");
-        HashMap<String, capitulo> capitulos = leitor.lerCapitulo("rsc/capitulos.txt", personagens);
+        HashMap<String, capitulo> capitulos = leitor.lerCapitulo("rsc/capitulo.txt", personagens);
 
         capitulo raiz = capitulos.get("cap1");
          
