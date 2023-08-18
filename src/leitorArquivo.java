@@ -12,7 +12,7 @@ public class leitorArquivo {
 
         File arquivo = new File(caminho);
         try{
-            Scanner escaneador = new Scanner(arquivo);
+            Scanner escaneador = new Scanner(arquivo,"UTF-8");
             System.out.println("Lendo Personagens...");
             while (escaneador.hasNextLine()){
                 String linha = escaneador.nextLine();
@@ -36,9 +36,9 @@ public class leitorArquivo {
 
     HashMap<String, capitulo> lerCapitulo(String caminho, HashMap<String, personagem> personagens){
         HashMap<String, capitulo> capitulos = new HashMap<String, capitulo>();
-        File arquivo2 = new File(caminho);
+        File arquivo2 = new File(caminho );
         try{
-        Scanner escaneador = new Scanner(arquivo2);
+        Scanner escaneador = new Scanner(arquivo2,"UTF-8");
         System.out.println("Lendo Capitulos...");
         while (escaneador.hasNextLine()){
             String linha = escaneador.nextLine();
