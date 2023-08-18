@@ -51,7 +51,7 @@ public class leitorArquivo {
                 String personagem2 = escaneador.nextLine();
                 int mudanca1 = Integer.parseInt(escaneador.nextLine());
                 int mudanca2 = Integer.parseInt(escaneador.nextLine());
-                capitulo Capitulo = new capitulo(texto, pergunta, escolha, personagens.get("homem"), personagens.get("mulher"), mudanca1, mudanca2);
+                capitulo Capitulo = new capitulo(texto, pergunta, escolha, personagens.get(personagem1), personagens.get(personagem2), mudanca1, mudanca2);
                 capitulos.put(refOrigem, Capitulo);
             }
             else if(linha.equalsIgnoreCase("escolha")){
