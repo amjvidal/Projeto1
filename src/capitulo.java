@@ -49,7 +49,7 @@ public class capitulo {
                     loop = false;
                     capitulo proximoCapitulo = escolhas.getProximo();
                     proximoCapitulo.executar();
-                    return;
+            
             }
         }
          System.out.println("Escolha invalida! Tente novamente!");
