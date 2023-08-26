@@ -43,7 +43,7 @@ public class leitorArquivo {
         System.out.println("Lendo Capitulos...");
         while (escaneadordeArquivos.hasNextLine()){
             String linha = escaneadordeArquivos.nextLine();
-            if(linha.equalsIgnoreCase("capitulo") || linha.equalsIgnoreCase("capituloImagem")){
+            if(linha.equalsIgnoreCase("capitulo") || linha.equalsIgnoreCase("capituloImg")){
                 
                 String refOrigem = escaneadordeArquivos.nextLine();
                 String texto = escaneadordeArquivos.nextLine();
@@ -52,11 +52,15 @@ public class leitorArquivo {
                 String personagem2 = escaneadordeArquivos.nextLine();
                 int mudanca1 = Integer.parseInt(escaneadordeArquivos.nextLine());
                 int mudanca2 = Integer.parseInt(escaneadordeArquivos.nextLine());
-                if(linha.equalsIgnoreCase("Imagem")){
+                String linhaImagem = escaneadordeArquivos.nextLine();
+                if(linhaImagem.equalsIgnoreCase("Imagem")){
                     String imagem = "";
                     while(!linha.equalsIgnoreCase("FimImagem")){
+                        linha = escaneadordeArquivos.nextLine();
+                        if(linha.equalsIgnoreCase("FimImagem")){
+                            break;
+                        }
                         
-                        escaneadordeArquivos.nextLine();
                         imagem += "\n" + linha;
 
                     }

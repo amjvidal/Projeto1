@@ -17,7 +17,7 @@ homem
 -100
 
 
-capituloImagem
+capituloImg
 cap2
 Adam ficou extremamente feliz por sofia ter aceitado seu convite. Sofia e Adam passam o número um do outro para que possam conversar por mensagens mais tarde naquele mesmo dia. Adam: Sofia, estou feliz que você tenha concordado em ter esse encontro comigo. Eu estava ansioso para passar mais tempo com você. Que tal irmos ao Mariner's Bistro & Lounge? A comida é incrível, e tenho certeza de que você irá adorar o ambiente. Sofia: sorri suavemente Isso parece maravilhoso. Adoro a ideia de um jantar à beira-mar. Parece o cenário perfeito para nos conhecermos melhor Adam: empolgado Ótimo! No dia seguinte, Sofia e Adam se encontram em um aconchegante restaurante à beira-mar. O clima é descontraído e a conversa flui naturalmente. Durante o jantar, eles compartilham histórias engraçadas e risadas contagiantes. A química entre eles é palpável, e ambos estão se divertindo. Enquanto saboreiam a sobremesa, uma pausa ocorre na conversa, e é nesse momento que Sofia decide abrir o coração: 
 Sofia: Adam, estou realmente gostando de passar esse tempo com você. Sinto que temos uma conexão especial.Mas também tenho medo de me machucar novamente. O que você procura em um relacionamento? O que você espera de nós?    -A escolha que você fizer determinará a direção do relacionamento entre os dois. --------- Digite ESCOLHA INCERTA para uma resposta mais cautelosa e incerta., --------- Digite ESCOLHA POSITIVA para uma resposta positiva e encorajadora.
