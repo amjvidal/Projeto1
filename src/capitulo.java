@@ -19,20 +19,33 @@ public class capitulo {
       personagem personagem2, int mudanca1, int mudanca2){
         this.capitulo = capitulo;
         this.pergunta = pergunta;
-        this.escolhas = new ArrayList<>();
+        this.escolhas = new ArrayList<escolha>();
         this.personagem1 = personagem1;
         this.personagem2 = personagem2;
         this.mudanca1 = mudanca1;
         this.mudanca2 = mudanca2;
     }
 
-    public capitulo(Scanner escaneador, HashMap<String, personagem> personagens, String caminho){
+    public capitulo(Scanner escaneador, HashMap<String, personagem> personagens, Scanner escaneadordeArquivos){
         this.escaneador = escaneador;
-        this.escolhas = new ArrayList<>();
-        this.lerCapitulo(caminho, personagens);
+        this.escolhas = new ArrayList<escolha>();
+        this.lerCapitulo(personagens, escaneadordeArquivos);
     }
     
-    
+    protected void lerCapitulo(HashMap<String, personagem> personagens, Scanner escaneadordeArquivos){
+        escaneadordeArquivos.nextLine();
+        String personagem1 = escaneadordeArquivos.nextLine();
+        String personagem2 = escaneadordeArquivos.nextLine();
+        this.personagem1 = personagens.get(personagem1);
+        this.personagem2 = personagens.get(personagem2);
+        escaneadordeArquivos.nextLine();
+        String linha = escaneadordeArquivos.nextLine();
+        this.capitulo = "";
+        while(!linha.equalsIgnoreCase("pergunta")){
+            this.capitulo += linha + "\n";
+            linha = escaneadordeArquivos.nextLine();
+        }
+    }
     
     public void mostrar(){
         System.out.println(this.capitulo);
