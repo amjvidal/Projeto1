@@ -1,15 +1,17 @@
 package src;
 
 import java.util.ArrayList;
+import java.util.HashMap;
 import java.util.Scanner;
 public class capitulo {
-    private String capitulo;
-    private String pergunta;
-    private ArrayList<escolha> escolhas;
-    private personagem personagem1;
-    private personagem personagem2;
-    private int mudanca1;
-    private int mudanca2;
+    protected String capitulo;
+    protected String pergunta;
+    protected ArrayList<escolha> escolhas;
+    protected personagem personagem1;
+    protected personagem personagem2;
+    protected int mudanca1;
+    protected int mudanca2;
+    protected Scanner escaneador;
     Scanner scan = new Scanner(System.in);
     
 
@@ -22,6 +24,12 @@ public class capitulo {
         this.personagem2 = personagem2;
         this.mudanca1 = mudanca1;
         this.mudanca2 = mudanca2;
+    }
+
+    public capitulo(Scanner escaneador, HashMap<String, personagem> personagens, String caminho){
+        this.escaneador = escaneador;
+        this.escolhas = new ArrayList<>();
+        this.lerCapitulo(caminho, personagens);
     }
     
     
