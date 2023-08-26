@@ -61,6 +61,7 @@ public class leitorArquivo {
                 capitulos.get(refOrigem).adicionarEscolha(new escolha(escolha, capitulos.get(refSaida)));
 
             }
+          
         }
         escaneador.close();
         }
@@ -68,6 +69,49 @@ public class leitorArquivo {
              System.out.println("O Arquivo não foi encontrado no "+ caminho+ " Especificado.");
         }
         
+        return capitulos;
+    }
+         
+    HashMap<String, capitulo> lerCapituloImagem(HashMap<String, personagem> personagens, Scanner escaneador, HashMap<String, capitulo> capitulos){
+        String linha = escaneador.nextLine();
+        if(linha.equalsIgnoreCase("capitulo")){
+            ArrayList<escolha> escolha = new ArrayList<escolha>();
+            String refOrigem = escaneador.nextLine();
+            String texto = escaneador.nextLine();
+            String pergunta = escaneador.nextLine();
+            String personagem1 = escaneador.nextLine();
+            String personagem2 = escaneador.nextLine();
+            int mudanca1 = Integer.parseInt(escaneador.nextLine());
+            int mudanca2 = Integer.parseInt(escaneador.nextLine());
+            capitulo Capitulo = new capitulo(texto, pergunta, escolha, personagens.get(personagem1), personagens.get(personagem2), mudanca1, mudanca2);
+            capitulos.put(refOrigem, Capitulo);
+        }
+        else if(linha.equalsIgnoreCase("escolha")){
+            String refOrigem = escaneador.nextLine();
+            String escolha = escaneador.nextLine();
+            String refSaida = escaneador.nextLine();
+            capitulos.get(refOrigem).adicionarEscolha(new escolha(escolha, capitulos.get(refSaida)));
+        }
+        if(linha.equalsIgnoreCase("capituloImagem")){
+            String imagem = "";
+            ArrayList<escolha> escolhas = new ArrayList<escolha>();
+            String refOrigem = escaneador.nextLine();
+            String texto = escaneador.nextLine();
+            String pergunta = escaneador.nextLine();
+            String personagem1 = escaneador.nextLine();
+            String personagem2 = escaneador.nextLine();
+            int mudanca1 = Integer.parseInt(escaneador.nextLine());
+            int mudanca2 = Integer.parseInt(escaneador.nextLine());
+            if(linha.equalsIgnoreCase("imagem")){
+                
+                while(!linha.equalsIgnoreCase("FimImagem")){
+                    linha = escaneador.nextLine();
+                    imagem += "\n" + linha;
+                }
+            }
+            capituloImagem Capitulo = new capituloImagem(texto, pergunta, escolhas, personagens.get(personagem1), personagens.get(personagem2), mudanca1, mudanca2, imagem);
+            capitulos.put(refOrigem, Capitulo);
+        }
         return capitulos;
     }
 }
