@@ -58,7 +58,7 @@ public class capitulo {
             this.personagem2.mudapaixao(mudanca2);}
     }
     
-    
+ 
     // O METEDO COMPARA A RESPOSTA DO USUARIOS COM INDICE DO ARRAY
     public void escolher(){
         boolean loop = true;
